@@ -455,7 +455,6 @@
     <button class="dot" onclick="goTo(2)"></button>
     <button class="dot" onclick="goTo(3)"></button>
     <button class="dot" onclick="goTo(4)"></button>
-    <button class="dot" onclick="goTo(5)"></button>
   </div>
 </nav>
 
@@ -562,76 +561,11 @@
     </div>
   </section>
 
-  <!-- SLIDE 3B: PROPRIETARY DATA MOAT -->
-  <section class="slide" id="slide-2b" style="background:#0A0A0A;color:#F5F2ED;min-height:calc(100vh - 64px);display:flex;flex-direction:column;justify-content:center;padding:64px 80px;position:relative;border-bottom:1px solid rgba(255,255,255,0.08);opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;">
-    <span class="slide-num" style="color:rgba(245,242,237,0.35)">04 / 06</span>
-    <div class="section-label" style="color:var(--accent)">Moat 2 — Proprietary Approval Intelligence</div>
-    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.025em;margin-bottom:12px;">Every report we generate is<br>data no one else has.</h2>
-    <p style="font-size:0.95rem;color:rgba(245,242,237,0.5);margin-bottom:36px;max-width:600px;line-height:1.6;">CIBIL gives a score. We give the answer to "which lender will approve this specific MSME profile today — and why." That knowledge only exists if you've processed thousands of real applications.</p>
-    <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:start">
-      <div>
-        <!-- Flywheel diagram in pure CSS/HTML -->
-        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:28px 24px;margin-bottom:20px;">
-          <div style="font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">The Data Flywheel</div>
-          <div style="display:flex;flex-direction:column;gap:0">
-            <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.8rem;flex-shrink:0">1</div>
-              <div style="font-size:0.83rem;color:rgba(245,242,237,0.8)">MSME uploads docs → we generate report</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.8rem;flex-shrink:0">2</div>
-              <div style="font-size:0.83rem;color:rgba(245,242,237,0.8)">They apply → lender approves or rejects</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.8rem;flex-shrink:0">3</div>
-              <div style="font-size:0.83rem;color:rgba(245,242,237,0.8)">Outcome feeds back → model gets smarter</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:14px;padding:12px 0">
-              <div style="width:28px;height:28px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:0.8rem;flex-shrink:0">∞</div>
-              <div style="font-size:0.83rem;color:rgba(245,242,237,0.8)">Each report makes the next recommendation more accurate</div>
-            </div>
-          </div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
-          <div style="background:rgba(232,64,10,0.1);border:1px solid rgba(232,64,10,0.2);padding:16px 14px;text-align:center">
-            <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--accent);letter-spacing:-0.04em">1K</div>
-            <div style="font-size:0.7rem;color:rgba(245,242,237,0.45);margin-top:4px;line-height:1.4">Reports<br>better than a CA's intuition</div>
-          </div>
-          <div style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);padding:16px 14px;text-align:center">
-            <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--gold);letter-spacing:-0.04em">10K</div>
-            <div style="font-size:0.7rem;color:rgba(245,242,237,0.45);margin-top:4px;line-height:1.4">Reports<br>better than any lender's own model</div>
-          </div>
-          <div style="background:rgba(26,122,74,0.15);border:1px solid rgba(26,122,74,0.3);padding:16px 14px;text-align:center">
-            <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:#6FD4A0;letter-spacing:-0.04em">50K</div>
-            <div style="font-size:0.7rem;color:rgba(245,242,237,0.45);margin-top:4px;line-height:1.4">Reports<br>India's richest MSME credit dataset</div>
-          </div>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:16px">
-        <div style="border:1px solid rgba(255,255,255,0.1);padding:22px 20px">
-          <div style="font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">What the data tells us (others don't know)</div>
-          <div style="font-size:0.82rem;line-height:1.7;color:rgba(245,242,237,0.7)">
-            → Ugro Capital approves textile MSMEs in Gujarat at C+ if GST is clean 6 months<br>
-            → Indifi rejects if cash-flow dips &gt;40% in any quarter<br>
-            → Lendingkart ignores CIBIL &lt;680 if UPI transactions &gt;₹3L/month<br>
-            → HDFC flags Udyam + GST address mismatch as auto-reject, others don't
-          </div>
-        </div>
-        <div style="border:1px solid rgba(255,255,255,0.1);padding:22px 20px">
-          <div style="font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Why competitors can't copy this</div>
-          <div style="font-size:0.82rem;line-height:1.65;color:rgba(245,242,237,0.7)">GoodScore can raise ₹500 crore tomorrow and still not have this data. It only exists if you've processed real MSME applications and tracked real approval outcomes. <strong style="color:white">Time in market is the moat.</strong></div>
-        </div>
-        <div style="background:rgba(26,122,74,0.12);border:1px solid rgba(26,122,74,0.3);padding:16px 18px;font-size:0.82rem;line-height:1.6;color:rgba(245,242,237,0.8)">
-          <span style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:#6FD4A0;display:block;margin-bottom:6px">Year 3+ Monetisation</span>
-          License the approval intelligence dataset to lenders, credit bureaus, and policy bodies as a standalone B2B data product. No competitor will have it.
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- SLIDE 4: SOLUTION -->
-  <section class="slide slide-4" id="slide-4">
-    <span class="slide-num">05 / 06</span>
+  <section class="slide slide-4" id="slide-3">
+    <span class="slide-num">04 / 05</span>
     <div class="section-label" style="color:var(--accent)">The Solution</div>
     <h2>CreditBridge — Your Loan<br>Approval Co-Pilot</h2>
     <p class="sub">Upload your documents. Get a plain-language report in 5 minutes that a banker would take 3 hours to produce manually.</p>
@@ -695,8 +629,8 @@
   </section>
 
   <!-- SLIDE 5: BUSINESS MODEL + ROADMAP -->
-  <section class="slide slide-5" id="slide-5">
-    <span class="slide-num">06 / 06</span>
+  <section class="slide slide-5" id="slide-4">
+    <span class="slide-num">05 / 05</span>
     <div class="section-label">Business Model & Roadmap</div>
     <h2>Three revenue layers.<br>One compounding moat.</h2>
     <div class="biz-grid">
